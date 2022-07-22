@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>grafana-enterprise</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/services/grafana/bin/grafana-server</string>
+    <string>--config</string>
+    <string>/usr/local/etc/grafana/grafana.ini</string>
+    <string>--homepath</string>
+    <string>/opt/services/grafana</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardErrorPath</key>
+  <string>/var/logs/grafana.errpath.log</string>
+  <key>StandardOutPath</key>
+  <string>/var/logs/grafana.stout.log</string>
+</dict>
+</plist>
